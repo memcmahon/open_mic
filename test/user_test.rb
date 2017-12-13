@@ -89,8 +89,6 @@ class UserTest < Minitest::Test
 
     casey.learn_routine('jokes.csv')
 
-    require 'pry'; binding.pry
-
     assert_equal 100, casey.jokes.count
   end
 end
